@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download WhatEELS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="description" content="Download WhatEELS, the open source software for EELS data analysis. Available for Windows">
+    <link rel="icon" type="image/x-icon" href="https://estatics.web.ub.edu/o/ub-theme/images/favicon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://web.ub.edu/es/inicio">
+    <meta property="og:title" content="Download WhatEELS">
+    <meta property="og:description" content="Download WhatEELS, the open source software for EELS data analysis. Available for Windows">
+    <meta property="og:image" content="https://web.ub.edu/documents/2685349/2686580/marca_peu_150.png.jpg/d1edc411-ab53-7e7d-88a5-866227bab7f2?t=1669825612958">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://web.ub.edu/es/inicio">
+    <meta name="twitter:title" content="Download WhatEELS">
+    <meta name="twitter:description" content="Download WhatEELS, the open source software for EELS data analysis. Available for Windows">
+    <meta name="twitter:image" content="https://web.ub.edu/documents/2685349/2686580/marca_peu_150.png.jpg/d1edc411-ab53-7e7d-88a5-866227bab7f2?t=1669825612958">
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li>
+                    <h1>
+                        <a href="/">
+                            WhatEELS
+                        </a>
+                    </h1>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://web.ub.edu/es/" target="_blank">
+                        <img width="150" height="auto" src="https://web.ub.edu/documents/2685349/2686580/marca_peu_150.png.jpg/d1edc411-ab53-7e7d-88a5-866227bab7f2?t=1669825612958" alt="Universitat de Barcelona">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            Operating System
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="os-row">
+                        <td>
+                            Windows
+                        </td>
+                        <td>
+                            <a class="download" href="{{ url_for('download_file', filename='WhatEELS.zip') }}" download>Download</a>
+                        </td>
+                    </tr>
+                    <tr class="os-row">
+                        <td>
+                            MacOS
+                        </td>
+                        <td>
+                            <button class="download disabled">Download</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.ub.edu/575aniversari/" target="_blank">
+                        <img width="200" height="auto" src="https://www.ub.edu/575aniversari/assets/themes/1/img/logos/logo-horitzontal-color.svg" alt="YouTube">
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a title="Facebook" rel="noopener" target="_blank" href="https://www.facebook.com/UniversitatdeBarcelona">
+                        <img width="20" height="auto" src="https://web.ub.edu/documents/2685349/2686580/Facebook.svg/60ce83b7-72e4-4180-17d6-13c87b7230dc?t=1662540804143" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a title="Telegram" rel="noopener" target="_blank" href="https://t.me/s/unibarcelona/">
+                        <img width="20" height="auto" src="https://web.ub.edu/documents/2685349/2686580/Telegram.svg/6fdf4219-5e05-a873-0237-b75a86a29d8a?t=1669209124876" alt="Telegram">
+                    </a>
+                </li>
+                <li>
+                    <a title="iVoox" rel="noopener" target="_blank" href="https://www.ivoox.com/podcast-l-8217-actualitat-ub-podcast_sq_f1922725_1.html">
+                        <img width="20" height="auto" src="https://web.ub.edu/documents/2685349/2686580/ivoox.svg/fb63b95f-3485-4af8-2cd5-c1be31f6daa7?t=1662540802929" alt="ivoox">
+                    </a>
+                </li>
+                <li>
+                    <a title="LinkedIn" rel="noopener" target="_blank" href="https://www.linkedin.com/school/university-of-barcelona/mycompany/">
+                        <img width="20" height="auto" src="https://web.ub.edu/documents/2685349/2686580/Linkedn.svg/fa29292a-02d1-824b-3f68-c5e6b1ea1c83?t=1662540803153" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>
