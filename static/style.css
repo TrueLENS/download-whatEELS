@@ -151,7 +151,6 @@ body {
     }
 
     & > footer {
-        padding: 10px;
         border-top: var(--border-color) solid 1px;
         height: var(--footer-height);
         display: flex;
@@ -190,6 +189,24 @@ body {
 
                         &:hover {
                             color: var(--black);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width < 600px) {
+    body {
+        & > footer {
+            & > div {
+                & > ul:last-of-type {
+                    gap: .5rem;
+                    & li {
+                        & a img {
+                            width: 26px;
                         }
                     }
                 }
